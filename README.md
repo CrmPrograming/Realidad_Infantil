@@ -1,4 +1,4 @@
-Realidad_Infantil
+Realidad Infantil
 =================
 
 El proyecto **Realidad Infantil** tiene por finalidad servir de herramienta educativa para los niños, permitiéndoles interactuar
@@ -17,3 +17,8 @@ mover o rotar el código QR implica mover o rotar el propio modelo.
 
 Los distintos modelos utilizados para las distintas secciones fueron localizados por Internet buscando aquellos gratuitos adaptándolos en algunos casos 
 para ajustar la escala a proporciones más adecuadas. 
+
+#### Importante
+
+La redacción de la documentación de este proyecto no está terminada. Se intentará tenerla acabada lo antes posible, 
+disculpas por las molestias que esto pueda ocasionar.
