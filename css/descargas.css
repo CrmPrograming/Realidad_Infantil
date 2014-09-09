@@ -1,0 +1,9 @@
+ul {
+  list-style-type: none;
+}
+
+.cabecera_listas {
+  font-weight: normal;
+  text-decoration: none;
+  font: 100% Arial,Helvetica,sans-serif;
+} 

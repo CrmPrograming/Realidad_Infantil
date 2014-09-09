@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>Realidad Infantil</title>
+  <meta name="description" content="free website template" />
+  <meta name="keywords" content="enter your keywords here" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/start/jquery-ui-1.10.4.custom.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/mostrar_modelo.css" />
+  <script type="text/javascript" src="librerias/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="librerias/jquery-ui-1.10.4.custom.min.js"></script>
+  <script type="text/javascript" src="scripts/general.js"></script>
+  <script type="text/javascript" src="scripts/listado_modelos.js"></script>  
+  <script type="text/javascript" src="scripts/capturar_argumentos.js"></script>
+  
+</head>
+
+<body onLoad="init();">
+  <div id="main">
+    <div id="header">
+    <div id="banner">
+      <div id="welcome">
+        <h1>Realidad Infantil</h1>
+      </div><!--close welcome-->
+      <div id="welcome_slogan">
+        <h1></h1>
+      </div><!--close welcome_slogan-->
+    </div><!--close banner-->
+    </div><!--close header-->
+
+  <div id="menubar">
+      <ul id="menu">
+        <li><a href="index.html" title="Inicio"><img alt="Inicio" src="images/icons/windows-16.png" class="reduced"></img></a></li>
+        <li><a href="listado.html" title="Listado"><img alt="Listado" src="images/icons/box-11.png" class="reduced"></img></a></li>
+        <li><a href="descargas.html" title="Descargas"><img alt="Descargas" src="images/icons/download-24.png" class="reduced"></img></a></li>
+        <li><a href="instrucciones.html" title="Instrucciones"><img alt="Instrucciones" src="images/icons/bubble.png" class="reduced"></img></a></li>
+        <li><a href="contactar.html" title="Contactar"><img alt="Contactar" src="images/icons/mail-52.png" class="reduced"></img></a></li>
+        <li><a href="acercade.html" title="Acerca de"><img alt="Acerca de" src="images/icons/info-23.png" class="reduced"></img></a></li>
+      </ul>
+    </div><!--close menubar-->  
+    
+  <div id="site_content">   
+   
+    <div id="content" style="width:97% !important;">
+        <h1 id="titulo_seccion">Test Canvas</h1>        
+    </div> 
+    <div id="div_voz" align="center" style="display:none;">
+      <br />
+      <p>
+        <input id="input_resultado_voz" value="" placeholder="Su respuesta es:"></input>
+      </p>
+    </div>
+    <div id="div_pista" align="center" style="display:none;">
+    </div> 
+    <div id="div_navegacion" align="center" style="display:none;">
+      <a href="" onclick="window.location.reload()"><img id="img_cambiar_modelo" src="images/icons/refresh-20.png" title="Cambiar de figura"/></a>
+    </div> 
+  </div><!--close site_content-->   
+ 
+  </div><!--close main-->
+  
+  <div id="footer">
+    Website template by <a href="http://www.araynordesign.co.uk">ARaynorDesign</a>
+  </div><!--close footer-->  
+  <div class="footer_chrome" id="div_chrome" align="center" valign="center" style="display:none;">
+     <p>
+        <img src="images/icons/chrome-5.png" width="4%"/><br/>
+        Actualmente no está usando <b>Google Chrome</b>. Por favor, utilícelo para poder utilizar las herramientas
+        de la web correctamente. Puede descargarlo desde la sección de descargas.
+     </p>       
+  </div> 
+  
+  <script>
+    $("#titulo_seccion").text(rutaModelo.title);
+    if (rutaModelo.mod != "default") {
+    	$("#div_navegacion").show();  
+    	$("#div_voz").show();
+    }
+    $('#img_cambiar_modelo').hover(function () {
+        $(this).addClass('cambiar_modelo');
+    }, function () {
+        $(this).removeClass('cambiar_modelo');
+    });
+  </script>
+  
+  <script type="text/javascript" src="librerias/three.min.js"></script>
+  <script type="text/javascript" src="librerias/ColladaLoader.js"></script>
+  <script type="text/javascript" src="librerias/JSARToolKit.js"></script>
+  <script type="text/javascript" src="scripts/canvasRA/init.js"></script>
+  <script type="text/javascript" src="scripts/canvasRA/initJSARToolKit.js"></script>
+  <script type="text/javascript" src="scripts/canvasRA/canvasModelo.js"></script>
+  <script type="text/javascript" src="scripts/reconocimiento_voz.js"></script>
+  
+</body>
+</html>

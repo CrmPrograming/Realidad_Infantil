@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>Realidad Infantil</title>
+  <meta name="description" content="free website template" />
+  <meta name="keywords" content="enter your keywords here" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/start/jquery-ui-1.10.4.custom.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/listado.css" />
+  <script type="text/javascript" src="librerias/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="librerias/jquery-ui-1.10.4.custom.min.js"></script>
+  <script type="text/javascript" src="scripts/general.js"></script>
+  <script type="text/javascript" src="scripts/listado.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+    <div id="banner">
+      <div id="welcome">
+        <h1>Realidad Infantil</h1>
+      </div><!--close welcome-->
+      <div id="welcome_slogan">
+        <h1></h1>
+      </div><!--close welcome_slogan-->
+    </div><!--close banner-->
+    </div><!--close header-->
+
+  <div id="menubar">
+      <ul id="menu">
+        <li><a href="index.html" title="Inicio"><img alt="Inicio" src="images/icons/windows-16.png" class="reduced"></img></a></li>
+        <li class="current"><a href="listado.html" title="Listado"><img alt="Listado" src="images/icons/box-11.png" class="reduced"></img></a></li>
+        <li><a href="descargas.html" title="Descargas"><img alt="Descargas" src="images/icons/download-24.png" class="reduced"></img></a></li>
+        <li><a href="instrucciones.html" title="Instrucciones"><img alt="Instrucciones" src="images/icons/bubble.png" class="reduced"></img></a></li>
+        <li><a href="contactar.html" title="Contactar"><img alt="Contactar" src="images/icons/mail-52.png" class="reduced"></img></a></li>
+        <li><a href="acercade.html" title="Acerca de"><img alt="Acerca de" src="images/icons/info-23.png" class="reduced"></img></a></li>
+      </ul>
+    </div><!--close menubar-->  
+    
+  <div id="site_content">     
+    <div id="content" style="width:98%;">
+        <div class="content_item" style="width:100%;">
+          <h1>Listado de actividades</h1>
+          <div id="tabs">
+            <ul>
+              <li title="Colores"><a href="#tabs_colores"><img alt="Colores" src="images/icons/color-5.png" class="tabs_listado"></img></a></li>
+              <li title="Formas"><a href="#tabs_formas"><img alt="Formas" src="images/icons/globe-19.png" class="tabs_listado"></img></a></li>
+              <li title="Animales"><a href="#tabs_animales"><img alt="Animales" src="images/animales/animal_02.png" class="tabs_animal"></img></a></li>
+            </ul>
+            <div id="tabs_colores"> 
+              <p>                        
+                  <a href="mostrar_modelo.html?modo=0x0" title="¡Adivina el color!"><img id="cubo_pintura" src="images/listado/cubo_pintura.png" class="botones_apartados"></img></a>                     
+                  <a title="¡Próximamente!" onclick="mostrarDialogo()"><img src="images/listado/obras.png" class="botones_apartados obras_colores"></img></a> 
+              </p>             
+            </div>
+            <div id="tabs_formas">
+              <p>                        
+                  <a href="mostrar_modelo.html?modo=1x0" title="¿Qué forma tiene?"><img id="pelota" src="images/listado/pelota.png" class="botones_apartados"></img></a>                     
+                  <a title="¡Próximamente!" onclick="mostrarDialogo()"><img src="images/listado/obras.png" class="botones_apartados obras_colores"></img></a> 
+              </p>
+            </div>
+            <div id="tabs_animales">
+              <p>                        
+                  <a href="mostrar_modelo.html?modo=2x0" title="¿Qué animal es?"><img id="adivina_animal" src="images/listado/adivinar_animal.png" class="botones_apartados"></img></a>                     
+                  <a title="¡Próximamente!" onclick="mostrarDialogo()"><img src="images/listado/obras.png" class="botones_apartados obras_colores"></img></a> 
+              </p>
+            </div>
+        </div>              
+        </div><!--close content_item-->
+        <div id="dialogo_nuevas_actividades" title="Aviso" align="center">
+          <p><img alt="Aviso" src="images/icons/warning-12.png" /></p>
+          <p><span>¡Próximamente más actividades en esta sección!</span></p>
+        </div>
+    </div><!--close content-->   
+  </div><!--close site_content-->       
+ 
+  </div><!--close main-->
+  
+  <div id="footer">
+    Website template by <a href="http://www.araynordesign.co.uk">ARaynorDesign</a>
+  </div><!--close footer-->  
+  <div class="footer_chrome" id="div_chrome" align="center" valign="center" style="display:none;">
+     <p>
+        <img src="images/icons/chrome-5.png" width="4%"/><br/>
+        Actualmente no está usando <b>Google Chrome</b>. Por favor, utilícelo para poder utilizar las herramientas
+        de la web correctamente. Puede descargarlo desde la sección de descargas.
+     </p>       
+  </div>  
+  
+</body>
+</html>
